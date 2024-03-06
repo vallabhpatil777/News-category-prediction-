@@ -50,7 +50,6 @@ df['processed_text'] = df['text'].apply(preprocess_text)
 X= df['processed_text']
 y = df["category"]
 
-# Feature Extraction
 count_vectorizer = CountVectorizer()
 tfidf_vectorizer = TfidfVectorizer()
 ngram_vectorizer = CountVectorizer(ngram_range=(2,2))
